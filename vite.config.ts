@@ -20,4 +20,16 @@ export default defineConfig({
     esbuild: {
         jsx: 'automatic',
     },
+    build: {
+        manifest: true,
+    },
+    server: {
+        hmr: {
+            host: 'localhost',
+        },
+    },
+    base: '/',
+    resolve: {
+        alias: {},
+    }
 });
